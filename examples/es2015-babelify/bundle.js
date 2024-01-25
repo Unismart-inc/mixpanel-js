@@ -2042,12 +2042,12 @@ MixpanelLib.prototype.identify = function (new_distinct_id, _set_callback, _add_
 
     // send an $identify event any time the distinct_id is changing - logic on the server
     // will determine whether or not to do anything with it.
-    if (new_distinct_id !== previous_distinct_id) {
-        this.track('$identify', {
-            'distinct_id': new_distinct_id,
-            '$anon_distinct_id': previous_distinct_id
-        }, { skip_hooks: true });
-    }
+    // if (new_distinct_id !== previous_distinct_id) {
+    //     this.track('$identify', {
+    //         'distinct_id': new_distinct_id,
+    //         '$anon_distinct_id': previous_distinct_id
+    //     }, {skip_hooks: true});
+    // }
 };
 
 /**
